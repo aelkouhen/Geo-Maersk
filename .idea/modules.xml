@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/geo-maersk.iml" filepath="$PROJECT_DIR$/.idea/modules/geo-maersk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/geo-maersk_main.iml" filepath="$PROJECT_DIR$/.idea/modules/geo-maersk_main.iml" group="geo-maersk" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/geo-maersk_test.iml" filepath="$PROJECT_DIR$/.idea/modules/geo-maersk_test.iml" group="geo-maersk" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
+    </modules>
+  </component>
+</project>

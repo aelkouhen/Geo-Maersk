@@ -1,0 +1,46 @@
+= Geo Assessment - Maersk
+
+A little project with scala, apache spark and built using gradle.
+
+== Prerequisites
+- https://java.com/en/download/[Java]
+- https://gradle.org/[Gradle]
+- https://www.scala-lang.org/[Scala]
+
+== Build and Demo process
+
+=== Clone the Repo
+`git clone https://github.com/aelkouhen/Geo-Maersk.git`
+
+=== Build
+`./gradlew clean build`
+
+=== Run
+`./gradlew run`
+
+=== All Together
+`./gradlew clean run`
+
+== What the application does?
+Take a look at *src->main->scala->com.maersk.geo* directory
+
+We have three Items here:
+
+- The InitSpark trait provides spark context and session variables pre-initialised. It can be extended by any class that wants to run spark code.
+This trait has all the code for initialization. I have also suppressed the logging to only error levels for less noise.
+- ConversionUtil is a scala object handling the conversion of coordinates from DMS to DD format.
+- The main of the application is in the object Geolocalization. In this class, I did:
+* Load the provided initial datasets.
+* A first left outer join between codeList and countries.
+* A second left outer join between the previous result and functions file content.
+* Then, I selected relevant columns as required in the email:
+`#Country_code | country_name | Location_code | Location_Name | Location_Type | Longitude | Latitude`
+* Perform conversion (from DMS to DD) on Latitudes and Longitudes.
+* Show the first 10 rows of the final results.
+* Save the entire results in a csv file.
+
+== Using this Repo
+Just import it into your favorite IDE as a gradle project.
+
+== Libraries Included
+- Spark - 2.3.0
