@@ -37,6 +37,22 @@ This trait has all the code for initialization. I have also suppressed the loggi
 `#Country_code | country_name | Location_code | Location_Name | Location_Type | Longitude | Latitude`
 * Perform conversion (from DMS to DD) on Latitudes and Longitudes.
 * Show the first 10 rows of the final results.
+----
++------------+------------+-------------+---------------+--------------------+-------------------+------------------+
+|Country_code|Country_name|Location_code|  Location_Name|       Location_Type|          Longitude|          Latitude|
++------------+------------+-------------+---------------+--------------------+-------------------+------------------+
+|          AU|   Australia|          ALO|        Adelong|       Road Terminal| -35.31666666666667|148.06666666666666|
+|          AU|   Australia|          ANB|     Agnes Bank|       Road Terminal|              -33.6|150.03333333333333|
+|          AU|   Australia|          AGW|          Agnew|             Airport|                 NA|                NA|
+|          AU|   Australia|          WSY|   Airlie Beach|             Airport|                 NA|                NA|
+|          AU|   Australia|          AIR|Airlie Terminal|Port, as defined ...|-21.333333333333332|             115.0|
+|          AU|   Australia|          APW|   Airport West|       Road Terminal|-37.733333333333334|            144.05|
+|          AU|   Australia|          ALH|         Albany|Port, as defined ...|                 NA|                NA|
+|          AU|   Australia|          ALH|         Albany|             Airport|                 NA|                NA|
+|          AU|   Australia|          ACK|   Albany Creek|Multimodal Functi...|             -27.35|            152.15|
+|          AU|   Australia|          ABO|       Alberton|       Road Terminal|              -27.7|153.08333333333334|
++------------+------------+-------------+---------------+--------------------+-------------------+------------------+
+----
 * Save the entire results in a csv file.
 
 == Using this Repo
