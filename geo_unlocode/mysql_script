@@ -291,7 +291,7 @@ INSERT INTO `countries` (`id`, `phone`, `code`, `name`, `capital`, `currency`, `
 
 -- Table structure for table `currency`
 
-CREATE TABLE IF NOT EXISTS `currency` (
+CREATE TABLE IF NOT EXISTS `currencies` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `currency_code` varchar(3) NOT NULL,
   `currency_name` varchar(50) NOT NULL,
@@ -299,7 +299,7 @@ CREATE TABLE IF NOT EXISTS `currency` (
 ) ENGINE=InnoDB AUTO_INCREMENT=165 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `currency` (`id`, `currency_code`, `currency_name`) VALUES
+INSERT INTO `currencies` (`id`, `currency_code`, `currency_name`) VALUES
 (1, 'AFA', 'Afghan Afghani'),
 (2, 'ALL', 'Albanian Lek'),
 (3, 'DZD', 'Algerian Dinar'),
