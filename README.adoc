@@ -1,6 +1,6 @@
 = Geo Assessment - Maersk
 
-A little project with scala, apache spark and built using gradle.
+Assessment answers for Data Engineer Role at Maersk - little project with scala, apache spark and built using gradle.
 
 == Prerequisites
 - https://java.com/en/download/[Java]
